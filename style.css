@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Rock Salt', cursive;
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    border: 5px solid #f44f5c;
+     
+}
+
+.box-container{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color, #FFF);
+}
+
+.box-container p{
+    text-align: center;
+    margin-top: 57px;
+    font-weight: bolder;
+}
+
+.sidebar{
+    min-width: 130px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    padding: .5rem 1rem;
+    background-color: #f44f5c;
+    color: lightgreen;
+    font-weight: bolder;
+}
+
+.sidebar label{
+    margin-top: .15rem;
+    margin-bottom: .15rem;
+    
+}
+
+.divider {
+    margin: 2rem -1rem .4rem -1rem;
+    border-bottom: 2px dotted #89EDE3;
+}
+
+#box {
+    width: 200px;
+    height: 200px;
+    margin: 25px ;
+    background-color: var(--box-color, #FFD700);
+    box-shadow: 
+        calc(var(--x-position, 3) * 1px)
+        calc(var(--y-position, 3) * 1px)
+        calc(var(--blur, 5) * 1px)
+        calc(var(--spread, 6) * 1px)
+        var(--shadow-color, #000)
+}
+
+input:not([type="color"]) {
+    
+    padding: .25em .5em;
+    font-family: inherit;
+    border: 1px solid transparent;
+    border-radius: .9em;
+    outline: none;
+}   
+
+input:not([type="color"]):focus {
+    border-color: #0AF;
+}
+
+input[type="color"] {
+    width: 100%;
+    border-radius: .9em;
+    background-color: #89EDE3;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
